@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Sharing App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">FileShare</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#upload-section">Upload</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#file-list">My Files</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#auth-section">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container text-center">
+            <h1>File Sharing Made Easy</h1>
+            <p>Share your files securely with just a few clicks.</p>
+        </div>
+    </header>
+
+    <!-- File Upload Section -->
+    <section id="upload-section" class="upload-section py-5">
+        <div class="container">
+            <h2 class="text-center">Upload Your Files</h2>
+            <form id="upload-form">
+                <div class="form-group">
+                    <input type="file" id="file-input" class="form-control-file" multiple>
+                </div>
+                <button type="submit" class="btn btn-primary">Upload Files</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- File List Section -->
+    <section id="file-list" class="file-list py-5">
+        <div class="container">
+            <h2 class="text-center">Your Files</h2>
+            <div id="file-list-container" class="row">
+                <!-- Dynamically generated file list -->
+            </div>
+        </div>
+    </section>
+
+    <!-- User Authentication Section -->
+    <section id="auth-section" class="auth-section py-5">
+        <div class="container">
+            <h2 class="text-center">Login / Signup</h2>
+            <form id="auth-form">
+                <div class="form-group">
+                    <input type="text" id="username" class="form-control" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" class="form-control" placeholder="Password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+            <p class="text-center mt-3">Don't have an account? <a href="#">Sign up here</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 FileShare. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
